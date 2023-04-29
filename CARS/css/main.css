@@ -1,0 +1,363 @@
+/*GENERAL SETTINGS*/
+@font-face{
+    font-family:"Raleway";
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+body{
+    background: #ffffff;/*white veya #fff de kullanılabilir*/
+    color: #3f3f3f;
+    font: 14px/28px arial;
+    font-family: 'Raleway';        
+}
+
+h1{
+    font-size: 52px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.sectionHeader{
+
+    background-color: #550D16;
+    border-bottom: 6px solid #000;
+    height: 60px;
+    color: #fff;
+    display: inline-block;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    /*text-align: center;/**/
+    
+
+}
+
+h3{
+    font-size: 16px;
+    color: #500D16;
+    /*font-weight: bold;*/
+    transition: all .5sn ease;
+}
+
+.sectionArea{
+    padding: 80px 0;
+}
+
+/*GRID SETTINGS*/
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;    
+}
+
+.featuresBody .container{
+    justify-content: space-between;
+}
+
+.col3{
+    flex-grow: 1;
+    width: 33.33%
+}
+
+.engineBody .container{
+    justify-content: space-between;
+}
+.col2{
+    flex-grow: 1;
+    width: 50%;
+    padding: 20px;
+}
+
+
+/*HOME SETTINGS*/
+
+header .logo{
+    margin-right: auto;
+}
+
+header .logo img{
+   display: block;
+    height: 70px;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu li a{    
+    padding: 27px 17px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: #333333;/*veya kısaltma olarak #333*/
+    transition: all .5s ease;    
+}
+
+.menu li a:last-child{
+    padding-right: 0;
+    
+}
+
+.menu li:hover a{
+    background: #500D16;
+    color:#ffffff;
+    
+}
+
+
+#mainSlider {/*id ler sharp işareti ile belirtilir*/
+    height: 500px;
+    background: url('../img/maincars1.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.slider{
+    width: 100%;
+}
+
+#mainCaption{
+    height: 500px;
+    background: rgba(0,0,0, .6)
+}
+
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+}
+
+.featuresTop{
+    text-align: center;    
+}
+
+.item{
+    padding: 10px 20px;
+}
+
+.zoom{
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.zoom img{
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all .5s ease;
+}
+
+.item .itemText{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #500D16;
+}
+
+.item:hover .zoom img{
+    transform: scale(1.25);
+}
+
+.item:hover h3{
+    color: #fff;
+}
+
+.item:hover .itemText{
+    background: #500D16;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.btnDetails{
+    color: #500D16;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #500D16;
+    transition: all .5sn ease;
+}
+
+.item:hover .btnDetails{
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.itemText p{
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+#parallax{
+    /*background: linear-gradient{
+        rgba(0,0,0,.7),
+        rgba(0,0,0,.7)
+    },
+    url('../img/parallax.jpg');*/
+    background:  url('../img/parallax.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;    
+}
+
+#parallax p{
+    color: #fff;
+}
+
+.engineTop{
+    text-align: center;
+}
+
+.engineContainer{
+    position: relative;
+    width: 100%;
+}
+
+.imageOver{
+    display: block;
+    width: 100%;
+    height: auto;    
+}
+
+.engineOverlay{
+        
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(80,13,22,.7);
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+    transition: .5sn ease; 
+  
+}
+
+.engineContainer:hover .engineOverlay{
+    width: 100%;
+}
+
+.engineText{
+    white-space: nowrap;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.engineOverlay2{
+        
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(80,13,22,.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5sn ease; 
+  
+}
+
+.engineContainer:hover .engineOverlay2 {
+    width: 100%;
+    left: 0;
+   
+}
+
+footer{
+    background: #500D16;
+    text-align: center;
+}
+
+footer .socialLinks{
+    text-align: center;
+    padding: 20px;
+}
+
+.footerItem{
+    padding: 20px;
+}
+
+.footerItem img{
+    height: 50px;
+    opacity: .5;
+}
+
+footer h3{
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;    
+}
+
+/*
+footer .socialLinks .fa{
+    font-size: 30px;
+    color: #95A5A6;
+    line-height: 50px;
+    transition: .3s ease;
+}
+*/
+
+
+footer .socialLinks img{
+    background: #500D16;
+    color: #fff;
+    height: 30px;
+    
+    
+}
+footer .socialLinks img:hover{
+    background: #500D16;
+    color: #fff;
+    height: 30px;
+    transform: scale(1.25)
+   
+    
+    
+}
+
+footer p{
+    color: #95A5A6;
+    line-height: 20px;
+}
+
+footer .footerLinks a{
+    text-decoration: none;
+     color: #95A5A6;
+    letter-spacing: 2px;
+    transition: .3 ease;    
+    
+}
+
+footer .footerLinks a:hover{
+     color: #fff;
+    text-decoration: underline;
+}
+
+footer .socialLinks li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
