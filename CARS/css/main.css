@@ -240,7 +240,7 @@ header .logo img{
     overflow: hidden;
     width: 0%;
     height: 100%;
-    transition: .5sn ease; 
+    transition: .5s all ease; 
   
 }
 
@@ -268,7 +268,7 @@ header .logo img{
     overflow: hidden;
     width: 0;
     height: 100%;
-    transition: .5sn ease; 
+    transition: .5s ease; 
   
 }
 
