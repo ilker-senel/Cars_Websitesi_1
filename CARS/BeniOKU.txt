@@ -1,1 +1,1 @@
-Projede kullanılan yazı fontu Ralewaydir. Bu fontu kullanmak için font dosyasını bilgisayarınıza yükleyin.
+Projede kullanılan yazı fontu ralewaydir. bu fontu kullanmak için font dosyasını bilgisayarınıza yükleyin
