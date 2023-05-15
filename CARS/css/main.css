@@ -1,23 +1,24 @@
 /*GENERAL SETTINGS*/
-@font-face{
-    font-family:"Raleway";
+@font-face {
+    font-family: "Raleway";
     src: url('../fonts/Raleway-Regular.ttf');
 }
 
-body{
-    background: #ffffff;/*white veya #fff de kullanılabilir*/
+body {
+    background: #ffffff;
+    /*white veya #fff de kullanılabilir*/
     color: #3f3f3f;
     font: 14px/28px arial;
-    font-family: 'Raleway';        
+    font-family: 'Raleway';
 }
 
-h1{
+h1 {
     font-size: 52px;
     letter-spacing: 4px;
     margin-bottom: 20px;
 }
 
-.sectionHeader{
+.sectionHeader {
 
     background-color: #550D16;
     border-bottom: 6px solid #000;
@@ -30,41 +31,42 @@ h1{
     letter-spacing: 2px;
     margin-bottom: 20px;
     /*text-align: center;/**/
-    
+
 
 }
 
-h3{
+h3 {
     font-size: 16px;
     color: #500D16;
     /*font-weight: bold;*/
     transition: all .5sn ease;
 }
 
-.sectionArea{
+.sectionArea {
     padding: 80px 0;
 }
 
 /*GRID SETTINGS*/
-.container{
+.container {
     width: 90%;
     margin: 0 auto;
-    display: flex;    
+    display: flex;
 }
 
-.featuresBody .container{
+.featuresBody .container {
     justify-content: space-between;
 }
 
-.col3{
+.col3 {
     flex-grow: 1;
     width: 33.33%
 }
 
-.engineBody .container{
+.engineBody .container {
     justify-content: space-between;
 }
-.col2{
+
+.col2 {
     flex-grow: 1;
     width: 50%;
     padding: 20px;
@@ -73,55 +75,59 @@ h3{
 
 /*HOME SETTINGS*/
 
-header .logo{
+header .logo {
     margin-right: auto;
 }
 
-header .logo img{
-   display: block;
+header .logo img {
+    display: block;
     height: 70px;
 }
 
-.menu li{
+.menu li {
     float: left;
 }
 
-.menu li a{    
+.menu li a {
     padding: 27px 17px;
     display: block;
     text-decoration: none;
     letter-spacing: 2px;
-    color: #333333;/*veya kısaltma olarak #333*/
-    transition: all .5s ease;    
-}
-.menu li a{
-/*    padding-right: 0;*/
-    
+    color: #333333;
+    /*veya kısaltma olarak #333*/
+    transition: all .5s ease;
 }
 
-.menu li:hover a{
+.menu li a {
+    /*    padding-right: 0;*/
+
+}
+
+.menu li:hover a {
     background: #500D16;
-    color:#ffffff;
-    
+    color: #ffffff;
+
 }
 
 
-#mainSlider {/*id ler sharp işareti ile belirtilir*/
+#mainSlider {
+    /*id ler sharp işareti ile belirtilir*/
+    /*display: flex;*/
     height: 500px;
     background: url('../img/maincars1.jpg') center center no-repeat;
     background-size: cover;
 }
 
-.slider{
+.slider {
     width: 100%;
 }
 
-#mainCaption{
+#mainCaption {
     height: 500px;
-    background: rgba(0,0,0, .6)
+    background: rgba(0, 0, 0, .6)
 }
 
-.caption{
+.caption {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,15 +136,15 @@ header .logo img{
     color: #fff;
 }
 
-.featuresTop{
-    text-align: center;    
+.featuresTop {
+    text-align: center;
 }
 
-.item{
+.item {
     padding: 10px 20px;
 }
 
-.zoom{
+.zoom {
     position: relative;
     overflow: hidden;
     display: inline-block;
@@ -146,34 +152,34 @@ header .logo img{
     vertical-align: top;
 }
 
-.zoom img{
+.zoom img {
     display: block;
     width: 100%;
     height: auto;
     transition: all .5s ease;
 }
 
-.item .itemText{
+.item .itemText {
     text-align: center;
     padding: 5px;
     border: 1px solid #500D16;
 }
 
-.item:hover .zoom img{
+.item:hover .zoom img {
     transform: scale(1.25);
 }
 
-.item:hover h3{
+.item:hover h3 {
     color: #fff;
 }
 
-.item:hover .itemText{
+.item:hover .itemText {
     background: #500D16;
     color: #fff;
     transition: all .5s ease;
 }
 
-.btnDetails{
+.btnDetails {
     color: #500D16;
     padding: 5px 10px;
     text-decoration: none;
@@ -181,12 +187,12 @@ header .logo img{
     transition: all .5sn ease;
 }
 
-.item:hover .btnDetails{
+.item:hover .btnDetails {
     color: #fff;
     border: 1px solid #fff;
 }
 
-.itemText p{
+.itemText p {
     margin: 20px 0;
 }
 
@@ -198,110 +204,110 @@ header .logo img{
 
 
 
-#parallax{
+#parallax {
     /*background: linear-gradient{
         rgba(0,0,0,.7),
         rgba(0,0,0,.7)
     },
     url('../img/parallax.jpg');*/
-    background:  url('../img/parallax.jpg');
+    background: url('../img/parallax.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    text-align: center;    
-}
-
-#parallax p{
-    color: #fff;
-}
-
-.engineTop{
     text-align: center;
 }
 
-.engineContainer{
+#parallax p {
+    color: #fff;
+}
+
+.engineTop {
+    text-align: center;
+}
+
+.engineContainer {
     position: relative;
     width: 100%;
 }
 
-.imageOver{
+.imageOver {
     display: block;
     width: 100%;
-    height: auto;    
+    height: auto;
 }
 
-.engineOverlay{
-        
+.engineOverlay {
+
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(80,13,22,.7);
+    background-color: rgba(80, 13, 22, .7);
     overflow: hidden;
     width: 0%;
     height: 100%;
-    transition: .5sn ease; 
-  
+    transition: .5s all ease;
+
 }
 
-.engineContainer:hover .engineOverlay{
+.engineContainer:hover .engineOverlay {
     width: 100%;
 }
 
-.engineText{
+.engineText {
     white-space: nowrap;
     color: #fff;
     font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
-.engineOverlay2{
-        
+.engineOverlay2 {
+
     position: absolute;
     bottom: 0;
     left: 100%;
     right: 0;
-    background-color: rgba(80,13,22,.7);
+    background-color: rgba(80, 13, 22, .7);
     overflow: hidden;
     width: 0;
     height: 100%;
-    transition: .5sn ease; 
-  
+    transition: .5s ease;
+
 }
 
 .engineContainer:hover .engineOverlay2 {
     width: 100%;
     left: 0;
-   
+
 }
 
-footer{
+footer {
     background: #500D16;
     text-align: center;
 }
 
-footer .socialLinks{
+footer .socialLinks {
     text-align: center;
     padding: 20px;
 }
 
-.footerItem{
+.footerItem {
     padding: 20px;
 }
 
-.footerItem img{
+.footerItem img {
     height: 50px;
     opacity: .5;
 }
 
-footer h3{
+footer h3 {
     color: #fff;
     font-size: 18px;
     letter-spacing: 2px;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
 }
 
 /*
@@ -314,53 +320,53 @@ footer .socialLinks .fa{
 */
 
 
-footer .socialLinks img{
+footer .socialLinks img {
     background: #500D16;
     color: #fff;
     height: 30px;
-    
-    
+
+
 }
-footer .socialLinks img:hover{
+
+footer .socialLinks img:hover {
     background: #500D16;
     color: #fff;
     height: 30px;
     transform: scale(1.25)
-   
-    
-    
 }
 
-footer p{
+footer p {
     color: #95A5A6;
     line-height: 20px;
 }
 
-footer .footerLinks a{
+footer .footerLinks a {
     text-decoration: none;
-     color: #95A5A6;
+    color: #95A5A6;
     letter-spacing: 2px;
-    transition: .3 ease;    
-    
+    transition: .3 ease;
+
 }
 
-footer .footerLinks a:hover{
-     color: #fff;
+footer .footerLinks a:hover {
+    color: #fff;
     text-decoration: underline;
 }
 
-footer .socialLinks li{
+footer .socialLinks li {
     display: inline-block;
     width: 50px;
     height: 50px;
 }
 
 /*Cars Settings*/
-#carsSlider {/*id ler sharp işareti ile belirtilir*/
+#carsSlider {
+    /*id ler sharp işareti ile belirtilir*/
     height: 250px;
     background: url('../img/sliderImage2.jpg') center center no-repeat;
     background-size: cover;
 }
+
 /*
 2000 px 1337 px değişkenlik gösterebilir
 */
@@ -368,121 +374,291 @@ footer .socialLinks li{
     width: 100%;
 }*/
 
-#carsCaption{
+#carsCaption {
     height: 250px;
-    background: rgba(0,0,0, .8);
+    background: rgba(0, 0, 0, .8);
 }
 
-#inspect{
+#inspect {
     background-color: #f5f5f5;
 }
 
-.inspectTop{
+.inspectTop {
     text-align: center;
 }
 
-.inspectBody .col2{
+.inspectBody .col2 {
     display: flex;
 }
-.inspectImage{
+
+.inspectImage {
     width: 40%;
 }
 
-.inspectImage img{
+.inspectImage img {
     width: 100%;
     height: auto;
 
 }
-.inspectText{
+
+.inspectText {
     width: 60%;
     padding-left: 10px;
-    
+
 }
 
-.date{
+.date {
     color: #333;
     font-size: 12px;
     font-style: italic;
-    
+
 }
 
-h4{
+h4 {
     color: #500d16;
     font-size: 14px;
     font-weight: bold;
-    
+
 }
 
-.inspectText a{
+.inspectText a {
     float: right;
     text-decoration: none;
     color: 550d16;
 }
 
-.inspectText a:hover{
+.inspectText a:hover {
     text-decoration: underline;
 }
 
-.projectXTop{
+.projectXTop {
     text-align: center;
 }
 
-#projectX .containerFluid{
+#projectX .containerFluid {
     height: 500px;
-     background: url('../img/cars1.jpg') center center no-repeat;
+    background: url('../img/carsProjectX.jpg') center center no-repeat;
     background-size: cover;
-    
+
 }
 
-.captionPX{
-    display: flex;/* aynı satıra almaya çalışır*/
-   background:  rgba(0,0,0,.3);
+.captionPX {
+    display: flex;
+    /* aynı satıra almaya çalışır*/
+    background: rgba(0, 0, 0, .5);
     width: 100%;
-    height:500px;
+    height: 500px;
 }
-.projectXInfo{
+
+.projectXInfo {
     position: relative;
-    top:50%;
+    top: 50%;
     left: 50%;
     margin-left: 5%;
     padding-right: 5%;
-    transform:translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.projectXTitle{
+
+.projectXTitle {
     font-size: 24px;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
+
 .projectXBtn {
     background-color: #500d16;
-    cursor: pointer;/*fare imleci değiştirme*/
+    cursor: pointer;
+    /*fare imleci değiştirme*/
     color: #fff;
     padding: 20px 40px;
     border: none;
     margin-top: 20px;
     transition: all .5s ease;
-    
+
 }
 
-.projectXBtn:hover{
+.projectXBtn:hover {
     background-color: #fff;
     color: #500d16;
 }
 
-.projectXText{
-    color:#fff;
+.projectXText {
+    color: #fff;
 }
-.projectXHighlight{
+
+.projectXHighlight {
     display: inline-block;
     background-color: #500d16;
     padding: 30px;
 }
 
-.containerFluid .col2{
+.containerFluid .col2 {
     padding: 0;
 }
 
-.projectXDetail li{
-    color:#fff;
-    
+.projectXDetail li {
+    color: #fff;
+}
+
+/*ABOUT SETTINGS*/
+#aboutSlider {
+    /*id ler sharp işareti ile belirtilir*/
+    height: 250px;
+    background: url('../img/businessman.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+#aboutCaption {
+    height: 250px;
+    background: rgba(0, 0, 0, .3);
+}
+
+#ourHistory {
+    background-color: #f5f5f5;
+}
+
+.ourHistoryTop {
+    text-align: center;
+}
+
+
+.ourHistoryBody .containerFluid {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.ourHistoryBody .col2 {
+    display: flex;
+}
+
+.ourHistoryDate {
+    flex: 1;
+    text-align: center;
+    background-color: #500d16;
+    color: #fff;
+
+}
+
+.ourHistoryDate p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.ourHistoryImage {
+    flex: 2;
+}
+
+.ourHistoryImage img {
+    width: 100%;
+    height: 100%;
+}
+
+.ourHistoryText {
+    flex: 3;
+    margin-left: 10px;
+
+}
+
+.ourHistoryText p {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.teamTop {
+    text-align: center;
+}
+
+.teamBody .containerFluid {
+
+    display: flex;
+    width: 100%;
+}
+
+.teamMember {
+    position: relative;
+    width: 100%;
+}
+
+.teamMemberImg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.teamMemberOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    background-color: #500d16;
+    transition: .5s ease;
+}
+
+.teamMember:hover .teamMemberOverlay {
+    opacity: 0;
+
+
+}
+
+
+.teamMember:hover .teamMemberInfo {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.teamTitle {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.teamMemberInfo {
+    color: #fff;
+    background-color: rgba(80, 13, 22, 0.7);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.memberSocialLinks {
+    text-align: center;
+}
+
+.memberSocialLinks {
+    display: inline;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.memberSocialLinks .fa-brands {
+    color: #fff;
+    padding-left: 10px;
+
+
 }
