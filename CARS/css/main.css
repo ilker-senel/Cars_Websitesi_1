@@ -892,6 +892,11 @@ h4 {
         height: auto;
 
     }
+    .teamMemberInfo {
+  
+    padding: 10px;
+   
+}
 
 }
 
@@ -970,6 +975,13 @@ h4 {
         height: auto;
 
     }
+    .teamMember:hover .teamMemberInfo {
+    color: #fff;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -1002,3 +1014,16 @@ h4 {
         height: auto;
 
     }
+    .teamMember:hover .teamMemberInfo {
+    color: #fff;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+    .teamMemberInfo h5,a{
+        font-size: 10px;
+       
+    /
